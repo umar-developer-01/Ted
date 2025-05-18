@@ -1,9 +1,9 @@
-
+import Main from "@/components/body/main"
 
 const Body = () => {
     return (
         <>
-            This is the Body
+            <Main />
         </>
     )
 }
