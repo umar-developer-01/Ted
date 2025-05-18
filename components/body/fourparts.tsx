@@ -9,48 +9,50 @@ const info = [
     {
         image: Eric,
         tag: "TECHNOLOGY",
-        desc: "The AI revolution is Underhyped"
+        desc: "The AI revolution is Underhyped",
+        name: "Eric Schmidt",
+        plays: "204K plays",
+        time: "3 days ago"
     }, {
         image: Bernt,
         tag: "TECHNOLOGY",
-        desc: "Meet NEO, your robot butler in training"
+        desc: "Meet NEO, your robot butler in training",
+        name: "Bernt Børnich",
+        plays: "928K plays",
+        time: "1 month ago"
     }, {
         image: Carole,
         tag: "POLITICS",
-        desc: "This is what a digital coup looks like"
+        desc: "This is what a digital coup looks like",
+        name: "Carole Cadwalladr",
+        plays: "1.88M plays",
+        time: "1 month ago"
     }, {
         image: Taylor,
         tag: "HEALTH",
-        desc: "Parkour! How the sport keeps your body and mind fit"
+        desc: "Parkour! How the sport keeps your body and mind fit",
+        name: "Taylor Lynn Carpenter",
+        plays: "348K plays",
+        time: "1 month ago"
     }
 ]
-const data = info
+
 const FourParts = () => {
     return (
         <>
-            <div className="grid grid-cols-2">
-                {/* {info.map((data, index) => (
-                    <div>
+            <div className="grid grid-cols-4 px-54 pt-8">
+                {info.map((data, index) => (
                     <Card
                         key={index}
                         image={data.image}
                         tag={data.tag}
                         desc={data.desc}
+                        name={data.name}
+                        plays={data.plays}
+                        time={data.time}
                     />
-                    </div>
-                ))} */}
-                <div>
-                    A
-                </div>
-                <div>
-                 B
-                </div>
-                <div>
-                  C  
-                </div>
-                <div>
-                   D
-                </div>
+                ))}
+
 
             </div>
         </>
@@ -64,22 +66,32 @@ type CardProps = {
     image: StaticImageData;
     tag: string;
     desc: string;
+    name: string;
+    plays: string;
+    time: string
 }
 
-const Card = ({ image, tag, desc }: CardProps) => {
+const Card = ({ image, tag, desc, name, plays, time }: CardProps) => {
     return (
-        <div className="h-full min-h-[500px] flex flex-col p-6 border rounded-md">
+        <div className="flex flex-col border rounded-md px-6">
             <Image
                 src={image}
                 alt="TED Logo"
-                width={250}
-                height={300}
-                className="mb-4"
+                width={350}
+                height={370}
+                className="mb-6"
             />
 
-            <div className="text-red-600 font-semibold mb-2">{tag}</div>
+            <div className="text-red-600 font-semibold mb-4">{tag}</div>
 
-            <div className="text-gray-800">{desc}</div>
+            <div className="text-xl font-bold mb-2">{desc}</div>
+            <div className="flex item-center gap-2 text-gray-500">
+               <div>{name}</div>
+               <div className="h-1 w-1 rounded-full bg-gray-500"></div>
+               <div>{plays}</div>
+               <div className="h-1 w-1 rounded-full bg-gray-500"></div>
+               <div>{time}</div>
+            </div>
         </div>
     );
 };
