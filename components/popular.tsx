@@ -1,39 +1,39 @@
 import Card from "@/components/card"
-import Eric from "@/public/EricSchmidt.jpg";
-import Bernt from "@/public/BerntBornich.jpg";
-import Carole from "@/public/CaroleCadwalladr.jpg";
-import Taylor from "@/public/TaylorLynnCarpenter.jpg"
+import Popular1 from "@/public/Popular1.jpg";
+import Popular2 from "@/public/Popular2.jpg";
+import Popular3 from "@/public/Popular3.jpg";
+import Popular4 from "@/public/Popular4.jpg"
 
 
 const info = [
     {
-        image: Eric,
-        tag: "TECHNOLOGY",
-        desc: "The AI revolution is Underhyped",
-        name: "Eric Schmidt",
-        plays: "204K plays",
-        time: "3 days ago"
-    }, {
-        image: Bernt,
-        tag: "TECHNOLOGY",
-        desc: "Meet NEO, your robot butler in training",
-        name: "Bernt Børnich",
-        plays: "928K plays",
-        time: "1 month ago"
-    }, {
-        image: Carole,
+        image: Popular1,
         tag: "POLITICS",
         desc: "This is what a digital coup looks like",
         name: "Carole Cadwalladr",
-        plays: "1.88M plays",
-        time: "1 month ago"
+        plays: "204K plays",
+        time: "2 months ago"
     }, {
-        image: Taylor,
+        image: Popular2,
         tag: "HEALTH",
-        desc: "Parkour! How the sport keeps your body and mind fit",
-        name: "Taylor Lynn Carpenter",
+        desc: "Why social health is key to happiness and longevity",
+        name: "Kasley Killam",
+        plays: "928K plays",
+        time: "3 months ago"
+    }, {
+        image: Popular3,
+        tag: "RELATIONSHIP",
+        desc: "The benefits of not being a jerk to yourself",
+        name: "Dan Harris",
+        plays: "1.88M plays",
+        time: "3 years ago"
+    }, {
+        image: Popular4,
+        tag: "SCIENCE",
+        desc: "How we're reverse engineering the human brain in the lab",
+        name: "Sergiu P. Pasca",
         plays: "348K plays",
-        time: "1 month ago"
+        time: "3 years ago"
     }
 ]
 
@@ -54,6 +54,7 @@ const Popular = () => {
                         name={data.name}
                         plays={data.plays}
                         time={data.time}
+                        type={"popular"}
                     />
                 ))}
 

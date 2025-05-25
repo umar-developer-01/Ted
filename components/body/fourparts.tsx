@@ -51,6 +51,7 @@ const FourParts = () => {
                         name={data.name}
                         plays={data.plays}
                         time={data.time}
+                        type={"main"}
                         
                     />
                 ))}

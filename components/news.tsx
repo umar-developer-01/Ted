@@ -1,39 +1,39 @@
 import Card from "@/components/card"
-import Eric from "@/public/EricSchmidt.jpg";
-import Bernt from "@/public/BerntBornich.jpg";
-import Carole from "@/public/CaroleCadwalladr.jpg";
-import Taylor from "@/public/TaylorLynnCarpenter.jpg"
+import News1 from "@/public/News1.jpg";
+import News2 from "@/public/News2.jpg";
+import News3 from "@/public/News3.jpg";
+import News4 from "@/public/News4.jpg"
 
 
 const info = [
     {
-        image: Eric,
+        image: News1,
         tag: "GLOBAL-ISSUES",
-        desc: "The AI revolution is Underhyped",
-        name: "Eric Schmidt",
+        desc: "Is this the time of monsters — or miracles?",
+        name: "Angus Hervey",
         plays: "204K plays",
+        time: "2 days ago"
+    }, {
+        image: News2,
+        tag: "TECHNOLOGY",
+        desc: "How my (slightly annoying) art went viral",
+        name: "Joshua Schachter",
+        plays: "928K plays",
         time: "3 days ago"
     }, {
-        image: Bernt,
-        tag: "TECHNOLOGY",
-        desc: "Meet NEO, your robot butler in training",
-        name: "Bernt",
-        plays: "928K plays",
-        time: "1 month ago"
-    }, {
-        image: Carole,
-        tag: "POLITICS",
-        desc: "This is what a digital coup looks like",
-        name: "Carole",
+        image: News3,
+        tag: "DEATH",
+        desc: "The ethical dilemma of deathbed wishes",
+        name: "Sarah Stroud, Michael Vazquez",
         plays: "1.88M plays",
-        time: "1 month ago"
+        time: "3 days ago"
     }, {
-        image: Taylor,
-        tag: "HEALTH",
-        desc: "Parkour! How the sport keeps your body and mind fit",
-        name: "Taylor",
+        image: News4,
+        tag: "CULTURE",
+        desc: "Why love is harder in a second language",
+        name: "Magdalena Hoeller",
         plays: "348K plays",
-        time: "1 month ago"
+        time: "3 days ago"
     }
 ]
 
@@ -53,6 +53,7 @@ const News = () => {
                         name={data.name}
                         plays={data.plays}
                         time={data.time}
+                        type={"news"}
                     />
                 ))}
 
