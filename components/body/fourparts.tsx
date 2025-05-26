@@ -13,6 +13,7 @@ const info = [
         name: "Eric Schmidt",
         plays: "204K plays",
         time: "3 days ago",
+        videoTime: "14"
 
     }, {
         image: Bernt,
@@ -20,21 +21,24 @@ const info = [
         desc: "Meet NEO, your robot butler in training",
         name: "Bernt Børnich",
         plays: "928K plays",
-        time: "1 month ago"
+        time: "1 month ago",
+        videoTime: "11"
     }, {
         image: Carole,
         tag: "POLITICS",
         desc: "This is what a digital coup looks like",
         name: "Carole Cadwalladr",
         plays: "1.88M plays",
-        time: "1 month ago"
+        time: "1 month ago",
+        videoTime: "16"
     }, {
         image: Taylor,
         tag: "HEALTH",
         desc: "Parkour! How the sport keeps your body and mind fit",
         name: "Taylor Carpenter",
         plays: "348K plays",
-        time: "1 month ago"
+        time: "1 month ago",
+        videoTime: "7"
     }
 ]
 
@@ -52,7 +56,7 @@ const FourParts = () => {
                         plays={data.plays}
                         time={data.time}
                         type={"main"}
-                        
+                        videoTime={data.videoTime}
                     />
                 ))}
 

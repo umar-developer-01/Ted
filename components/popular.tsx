@@ -12,28 +12,32 @@ const info = [
         desc: "This is what a digital coup looks like",
         name: "Carole Cadwalladr",
         plays: "204K plays",
-        time: "2 months ago"
+        time: "2 months ago",
+        videoTime: "18"
     }, {
         image: Popular2,
         tag: "HEALTH",
         desc: "Why social health is key to happiness and longevity",
         name: "Kasley Killam",
         plays: "928K plays",
-        time: "3 months ago"
+        time: "3 months ago",
+        videoTime: "10"
     }, {
         image: Popular3,
         tag: "RELATIONSHIP",
         desc: "The benefits of not being a jerk to yourself",
         name: "Dan Harris",
         plays: "1.88M plays",
-        time: "3 years ago"
+        time: "3 years ago",
+        videoTime: "14"
     }, {
         image: Popular4,
         tag: "SCIENCE",
         desc: "How we're reverse engineering the human brain in the lab",
         name: "Sergiu P. Pasca",
         plays: "348K plays",
-        time: "3 years ago"
+        time: "3 years ago",
+        videoTime: "13"
     }
 ]
 
@@ -42,7 +46,7 @@ const info = [
 const Popular = () => {
     return (
         <div className="text-lg font-bold py-4 mx-54 border-t  border-gray-500">
-            
+
             <p className="ml-6 font-semibold text-lg pt-2">POPULAR FROM TED</p>
             <div className="grid grid-cols-4 pt-6 mb-14 divide-x-1 divide-gray-200">
                 {info.map((data, index) => (
@@ -55,12 +59,13 @@ const Popular = () => {
                         plays={data.plays}
                         time={data.time}
                         type={"popular"}
+                        videoTime={data.videoTime}
                     />
                 ))}
 
 
             </div>
-         </div>
+        </div>
     )
 }
 

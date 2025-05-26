@@ -8,15 +8,17 @@ type CardProps = {
     plays: string;
     time: string;
     type:string;
+    videoTime:string;
 }
 
-const Card = ({ image, tag, desc, name, plays, time,type }: CardProps) => {
+const Card = ({ image, tag, desc, name, plays, time,type, videoTime  }: CardProps) => {
 
     return (
         <div className={`flex flex-col px-6`}>
                
-                <div className="mb-6 h-[200px] w-full">
+                <div className="mb-6 h-[200px] w-full relative">
                     <Image src={image} alt="TED Logo" className="w-full h-full" />
+                    <span className="absolute bg-gray-800 text-white text-sm p-1 bottom-3 right-3">{videoTime} MIN</span>
                 </div>
 
                 <div className="text-red-600 font-semibold mb-4">{tag}</div>
