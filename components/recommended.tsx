@@ -49,8 +49,37 @@ const Recommended = () => {
                         <div>2 year ago</div>
                     </div>
                 </div>
-                <div className="col-span-3">
-                    SOCIAL-CHANGE
+                <div className="col-span-3 pl-5 grid grid-rows-3 divide-y-1 divide-gray-200 pb-30">
+                    <div>
+                        <div className="text-red-600 font-semibold mt-4 mb-4">SOCIAL-CHANGE</div>
+                        <div className="text-xl font-bold mb-2">A case for color blindness</div>
+                        <div className="flex items-center text-gray-500 gap-2 text-sm">
+                            <div>Coleman Hughes</div>
+
+                            <div className="h-1 w-1 rounded-full bg-gray-500"></div>
+                            <div>2 year ago</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="text-red-600 font-semibold mt-4 mb-4">BUSINESS</div>
+                        <div className="text-xl font-bold mb-2">5 steps to fix any problem at work</div>
+                        <div className="flex items-center text-gray-500 gap-2 text-sm">
+                            <div>Anne Morriss</div>
+
+                            <div className="h-1 w-1 rounded-full bg-gray-500"></div>
+                            <div>2 year ago</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="text-red-600 font-semibold mt-4 mb-4">SCIENCE</div>
+                        <div className="text-xl font-bold mb-2">How stretching actually changes your muscles</div>
+                        <div className="flex items-center text-gray-500 gap-2 text-sm">
+                            <div>Malachy McHugh</div>
+
+                            <div className="h-1 w-1 rounded-full bg-gray-500"></div>
+                            <div>2 year ago</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
