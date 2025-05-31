@@ -5,7 +5,7 @@ import Recommended from "@/components/recommended";
 import News from "@/components/news";
 import Popular from "@/components/popular";
 import TalkDaily from "@/components/talkDaily";
-
+import TrendingIdeas from "@/components/trendingIdeas";
 
 const Body = () => {
     return (
@@ -17,6 +17,7 @@ const Body = () => {
             <News />
             <Popular />
             <TalkDaily/>
+            <TrendingIdeas/>
         </>
     )
 }
