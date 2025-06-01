@@ -15,7 +15,7 @@ const SignIn = () => {
         const interval = setInterval(() => {
             setIndex((prev) => (prev === 0 ? 1 : 0)); // Toggle image index between 0 and 1
 
-        }, 20000);
+        },10000);
 
         return () => clearInterval(interval);
     }, []);
@@ -33,8 +33,8 @@ const SignIn = () => {
                     />
                 </div>
                 <div className="col-span-1 flex flex-col">
-                    <div className="basis-[60%] flex flex-col items-center justify-center">
-                        <div className="text-3xl mb-7">
+                    <div className="basis-[50%] flex flex-col items-center justify-center mt-16">
+                        <div className="text-4xl mb-6">
                             Sign in or create a new account
                         </div>
                         <div className="flex flex-col gap-2 mb-10">
@@ -43,14 +43,20 @@ const SignIn = () => {
                             </div>
                             <input className="border border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500 rounded-md px-5 py-5 w-[560px] text-lg" placeholder="" />
                         </div>
-                        <button className="rounded-md bg-[#eeeeee] text-xl text-[#bbbbbb] px-8 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <button className="mt-2 rounded-md bg-[#eeeeee] text-xl text-[#bbbbbb] px-8 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
                             Continue
                         </button>
 
 
                     </div>
 
-                    <div className="basis-[40%]">
+
+                    <div className="basis-[50%]">
+                        <div className="flex items-center gap-4">
+                            <div className="flex-grow h-[2px] bg-gray-200"></div>
+                            <span className="text-gray-400 text-lg">OR</span>
+                            <div className="flex-grow h-[2px] bg-gray-200"></div>
+                        </div>
                         This is the B
                     </div>
 
@@ -61,7 +67,7 @@ const SignIn = () => {
     )
 }
 
-export default SignIn  
+export default SignIn
 
 
 
