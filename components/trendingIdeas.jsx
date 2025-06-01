@@ -5,7 +5,7 @@ import Trending2 from "@/public/trending-2.png";
 
 const TrendingIdeas = () => {
     return (
-        <div className="mx-60 mt-2  border-t  border-gray-500 mb-8">
+        <div className="mx-60 mt-2  border-t  border-gray-500 mb-12">
             <p className="font-semibold text-lg pt-4 pb-4">TRENDING IDEAS</p>
             <div className="border-t border-gray-300">
             </div>
