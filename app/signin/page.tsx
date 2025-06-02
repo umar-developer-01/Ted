@@ -15,7 +15,7 @@ const SignIn = () => {
         const interval = setInterval(() => {
             setIndex((prev) => (prev === 0 ? 1 : 0)); // Toggle image index between 0 and 1
 
-        },10000);
+        }, 10000);
 
         return () => clearInterval(interval);
     }, []);
@@ -49,20 +49,23 @@ const SignIn = () => {
 
 
                     </div>
-
-
-                    <div className="basis-[50%]">
-                        <div className="flex items-center gap-4">
-                            <div className="flex-grow h-[2px] bg-gray-200"></div>
-                            <span className="text-gray-400 text-lg">OR</span>
-                            <div className="flex-grow h-[2px] bg-gray-200"></div>
-                        </div>
-                        This is the B
+                    <div className="basis-[5%] flex items-center gap-4">
+                        <div className="flex-grow h-[2px] bg-gray-200"></div>
+                        <span className="text-gray-400 text-lg">OR</span>
+                        <div className="flex-grow h-[2px] bg-gray-200"></div>
                     </div>
+
+
+                    <div className="basis-[45%] flex flex-col text-xl text-gray-700 font-semibold items-center mt-15 gap-8">
+                        <div className="flex justify-center bg-gray-100 w-[300px] py-4 rounded-md hover:bg-gray-200 cursor-pointer">Continue With Apple</div>
+                        <div className="flex justify-center bg-gray-100 w-[300px] py-4 rounded-md hover:bg-gray-200 cursor-pointer">Continue With Google</div>
+                        <div className="flex justify-center bg-gray-100 w-[300px] py-4 rounded-md hover:bg-gray-200 cursor-pointer">Continue With Facebook</div>
+                    </div>
+
 
                 </div>
 
-            </div>
+            </div >
         </>
     )
 }
